@@ -28,11 +28,12 @@ SUB_SYSTEM = "python"
 logger = logging.getLogger("Python Logger")
 logger.setLevel(logging.DEBUG)
 
+#Check if no handler is already initialized 
+if not logger.handlers:        
 # Get a new instance of Coralogix logger.
-coralogix_handler = CoralogixLogger(PRIVATE_KEY, APP_NAME, SUB_SYSTEM)
-
+    coralogix_handler = CoralogixLogger(PRIVATE_KEY, APP_NAME, SUB_SYSTEM)
 # Add coralogix logger as a handler to the standard Python logger.
-logger.addHandler(coralogix_handler)
+    logger.addHandler(coralogix_handler)
 
 
 # Send message
