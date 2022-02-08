@@ -34,5 +34,12 @@ Can be added as a Environment Variable or with the following piece of code
 from coralogix.constants import Coralogix
 Coralogix.CORALOGIX_LOG_URL = 'https://api.coralogix.us:443/api/v1/logs'
 ```
-For more information please visit https://coralogix.com/integrations/coralogix-python-integration/
 
+If you need to progamatically force the SDK to send all messages that are in the buffer, flush_messages() can be used.
+
+flush_messages() : Flush all messages in buffer and send them immediately on the current thread
+```
+CoralogixLogger.flush_messages()
+```
+
+For more information please visit https://coralogix.com/integrations/coralogix-python-integration/
