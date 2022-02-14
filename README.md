@@ -25,6 +25,7 @@ pip install coralogix-logger
 api.coralogix.us 
 api.coralogix.com (default)
 api.app.coralogix.in
+api.coralogixsg.com
 
 ```
 
