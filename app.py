@@ -6,6 +6,11 @@ Email: support@coralogix.com
 """
 
 import logging
+
+# Set the CORALOGIX_LOG_URL with the proper URL value if it is other than api.coralogix.com.
+# from coralogix.constants import Coralogix
+# Coralogix.CORALOGIX_LOG_URL = 'https://api.eu2.coralogix.com:443/api/v1/logs'
+
 from coralogix.handlers import CoralogixLogger
 
 

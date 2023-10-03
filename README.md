@@ -28,6 +28,8 @@ Or from the app itself:
 from coralogix.constants import Coralogix
 Coralogix.CORALOGIX_LOG_URL = 'https://<Cluster_api_URL>:443/api/v1/logs'
 ```
+Note: Remember to set the CORALOGIX_LOG_URL before starting the CoralogixLogger.
+
 The options:
 ```
 api.coralogix.us 
